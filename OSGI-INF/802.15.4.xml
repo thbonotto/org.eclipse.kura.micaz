@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" configuration-policy="require" deactivate="deactivate" enabled="true" immediate="true" modified="updated" name="org.eclipse.kura.micaz.802.15.4">
+   <implementation class="org.eclipse.kura.micaz.MicaZDevideDriver"/>
+   <service>
+      <provide interface="org.eclipse.kura.configuration.ConfigurableComponent"/>
+      <provide interface="org.eclipse.kura.micaz.MicaZDevideDriver"/>
+   </service>
+   <property name="service.pid" value="org.eclipse.kura.micaz.MicaZ"/>
+</scr:component>
