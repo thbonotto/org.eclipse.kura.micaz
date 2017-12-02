@@ -40,7 +40,6 @@
 	                        	<g:item value='4'>4</g:item>
 	                        	<g:item value='5'>5</g:item>
 	                        	<g:item value='6'>6</g:item>
-	                        	<g:item value='7'>7</g:item>
 	                          	 </g:ListBox>
                         </g:FlowPanel>
                     </b:FormGroup>
