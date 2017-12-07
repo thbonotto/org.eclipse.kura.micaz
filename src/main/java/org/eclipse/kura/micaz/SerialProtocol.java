@@ -1,5 +1,6 @@
 package org.eclipse.kura.micaz;
 
+import java.util.ArrayList;
 import java.util.BitSet;
 
 public class SerialProtocol {
@@ -33,15 +34,15 @@ public class SerialProtocol {
 		
 	}
 	
-	public void SendGtsInformationMessage(int node_id, GTSRequest request) {
-		
+	public void SendGtsRequestMessage(int node_id, GtsDTO request, boolean unallocate) {
+		GTSRequest.buildGTSRequestMessage(node_id, request, unallocate);
 	}
 	
 	public void SendPayloadMessage(Byte[] payload) {
 		
 	}
 	
-	public void SendGtsRequestssociationMessage(MessageType message_type) {
+	public void SendGtsRequestAssociationMessage(MessageType message_type) {
 		
 	}
 
@@ -50,6 +51,11 @@ public class SerialProtocol {
 	}
 
 	public void updateSettings(String m_serial_interface_, int m_bo_, int m_so_, int m_pan_id_) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void updateGTSInformation(ArrayList<GtsDTO> gts_information) {
 		// TODO Auto-generated method stub
 		
 	}
